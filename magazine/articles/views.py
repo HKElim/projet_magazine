@@ -2,8 +2,23 @@ from django.shortcuts import render, get_object_or_404
 #from .models import Article
 
 # Create your views here.
-def base(request, *args, **kwargs):
-    return render(request, "articles/base.html", {})
+def home(request, *args, **kwargs):
+    return render(request, "articles/home.html", {})
+
+def categories_grid(request, *args, **kwargs):
+    return render(request, "articles/categories_grid.html", {})
+
+def details_post_default(request, *args, **kwargs):
+    return render(request, "articles/details_post_default.html", {})
+
+def details_post_review(request, *args, **kwargs):
+    return render(request, "articles/details_post_review.html", {})
+
+def contact(request, *args, **kwargs):
+    return render(request, "articles/contact.html", {})
+
+def typography(request, *args, **kwargs):
+    return render(request, "articles/typography.html", {})
 
 """def article_list(request):
     articles = Article.objects.all()
