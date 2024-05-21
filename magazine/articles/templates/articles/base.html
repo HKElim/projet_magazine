@@ -60,10 +60,6 @@
             </div>
             <div class="nav-options">
                 <div class="container">
-
-                    <div class="nav-search search-switch">
-                        <i class="fa fa-search"></i>
-                    </div>
                     <div class="nav-menu">
                         <ul>
                             <li class="active"><a href="{% url 'home' %}"><span>Home</span></a></li>
@@ -145,10 +141,10 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="{% url 'categories_grid' %}"><span>Catégories <i class="fa fa-angle-down"></i></span></a>
+                                <a href="{% url 'categories' %}"><span>Catégories <i class="fa fa-angle-down"></i></span></a>
                                 <ul class="dropdown">
-                                    <li><a href="{% url 'typography' %}">Typography</a></li>
-                                    <li><a href="{% url 'details_post_default' %}">Post default</a></li>
+                                    <li><a href="{% url 'categories_grid' %}">Catégories grid</a></li>
+                                    <li><a href="">Post default</a></li>
                                 </ul>
                             </li>
                             <li><a href="{% url 'details_post_review' %}"><span>Reviews <i class="fa fa-angle-down"></i></span></a></li>
